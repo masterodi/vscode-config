@@ -7,8 +7,7 @@
   "explorer.confirmPasteNative": false,
   "breadcrumbs.enabled": true,
   "explorer.compactFolders": false,
-  // "editor.semanticHighlighting.enabled": true,
-  "workbench.colorTheme": "poimandres-noitalics-storm",
+  "workbench.colorTheme": "poimandres-noitalics",
   "workbench.iconTheme": "symbols",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "left",
@@ -16,10 +15,10 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "single",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 18,
-  "workbench.activityBar.location": "hidden",
+  // "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": true,
   "workbench.panel.showLabels": false,
   "editor.folding": false,
@@ -27,24 +26,24 @@
   "editor.lightbulb.enabled": "off",
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": false,
-  "editor.cursorBlinking": "expand",
+  "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.scrollbar.horizontalScrollbarSize": 4,
   "editor.scrollbar.verticalScrollbarSize": 4,
   "editor.stickyScroll.enabled": false,
-  "explorer.autoReveal": false,
+  "explorer.autoReveal": true,
   "breadcrumbs.symbolPath": "off",
   "symbols.hidesExplorerArrows": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "window.titleBarStyle": "custom",
   // font
-  "editor.fontFamily": "Fira Code, Cascadia Mono, Consolas, monospace",
+  "editor.fontFamily": "Monaspace Neon, Fira Code Light, Fira Code, Ubuntu Mono, Consolas, 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontSize": 18,
   "editor.lineHeight": 2,
   "editor.tabSize": 4,
   "editor.wordWrap": "on",
   // Terminal
-  "terminal.integrated.fontFamily": "Fira Code, Cascadia Mono, Consolas, monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
@@ -52,6 +51,7 @@
   // Formatting
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "chat.commandCenter.enabled": false,
   // Search
   "search.exclude": {
     "**/node_modules": true,
@@ -80,6 +80,28 @@
   "files.associations": {
     "*.yrf": "json",
     "*.rpx": "xml",
-    "*.stl": "json"
-  }
+    "*.stl": "json",
+    "*.css": "tailwindcss",
+    ".env*": "dotenv"
+  },
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "httpyac.environmentShowStatusBarItem": true,
+  "httpyac.responseViewContent": "exchange",
+  "httpyac.useDecorationProvider": false
 }
